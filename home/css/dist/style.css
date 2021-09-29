@@ -62,7 +62,30 @@ section article {
   padding: 10px;
 }
 section article h2 {
-  margin-top: 50px;
+  margin-top: 35px;
+}
+section article figure {
+  margin: 0 0 20px 0;
+}
+section article figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(1);
+}
+section article figure img:hover {
+  filter: grayscale(0);
+}
+section article figure figcaption {
+  color: #434747c7;
+}
+section article p {
+  text-align: center;
+  padding: 0 3% 0 3%;
+}
+section article ul {
+  line-height: 1.6;
+  text-align: left;
 }
 section article a.read-more {
   display: block;
@@ -81,6 +104,10 @@ section article a.read-more:active {
   color: black;
   margin: 0 auto;
   border-radius: 30px;
+}
+section article a.link-disabled {
+  pointer-events: none;
+  color: #434747c7;
 }
 
 /*======================== end of MAIN ===============================*/
