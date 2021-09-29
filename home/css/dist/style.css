@@ -59,13 +59,12 @@ section article {
   color: black;
   margin: 2em auto;
   max-width: 450px;
-  padding: 10px;
 }
 section article h2 {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 section article figure {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 section article figure img {
   width: 100%;
@@ -78,14 +77,17 @@ section article figure img:hover {
 }
 section article figure figcaption {
   color: #434747c7;
+  font-size: small;
 }
-section article p {
-  text-align: center;
-  padding: 0 3% 0 3%;
+section article .article-body {
+  padding: 10px;
 }
 section article ul {
   line-height: 1.6;
   text-align: left;
+}
+section article .article-foot {
+  padding: 10px;
 }
 section article a.read-more {
   display: block;

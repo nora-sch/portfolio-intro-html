@@ -78,18 +78,19 @@ section {
 
         /*----------*/
 
-        background-color: white;
-        color           : $textColor2;
-        margin          : 2em auto;
-        max-width       : $maxWidthArticle;
-        padding         : 10px;
+        background-color   : white;
+        color              : $textColor2;
+         margin          : 2em auto;
+        max-width          : $maxWidthArticle;
+        // padding            : 10px;
+
 
         h2 {
-            margin-top: 35px;
+            margin-top: 15px;
         }
 
         figure {
-            margin: 0 0 20px 0;
+            margin: 0 0 10px 0;
 
             img {
                 width     : 100%;
@@ -105,18 +106,28 @@ section {
 
             figcaption {
                 color: $disabledText;
+                font-size: small;
             }
         }
 
-        p {
-            text-align: center;
-            padding   : 0 3% 0 3%;
-
+        .article-body {
+            padding: 10px;
         }
+
+        // p {
+        //     text-align: center;
+        //     padding   : 0 3% 0 3%;
+
+        // }
 
         ul {
             line-height: 1.6;
             text-align : left;
+        }
+
+        .article-foot {
+            padding: 10px;
+
         }
 
         a.read-more {
