@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  background-color: #151823;
+  color: white;
+  font-family: "Manjari", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  background-image: url(../../img/Teal-Image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  background-attachment: fixed;
+  padding-bottom: 1em;
+}
+header #top-image-div {
+  padding: 50px 30px;
+  margin: 0;
+}
+header #top-image-div img {
+  max-width: 270px;
+}
+header #top-menu a {
+  display: block;
+  background-color: #151823;
+  padding: 15px;
+  box-shadow: inset -1px -1px 3px -1px #0f1119;
+  /*====== animation =====*/
+  transition: 0.7s all ease-in-out;
+}
+header #top-menu a:hover,
+header #top-menu a:active {
+  background-color: rgba(255, 255, 255, 0.568);
+  color: black;
+  border-radius: 20px;
+  letter-spacing: 0.4rem;
+  margin: 0 10px;
+  transition: 0.7s all ease-in-out;
+}
+
+/*======================== end of HEADER ===============================*/
+section {
+  text-align: center;
+}
+section article {
+  /*----------*/
+  /*----------*/
+  background-color: white;
+  color: black;
+  margin: 2em auto;
+  max-width: 450px;
+  padding: 10px;
+}
+section article h2 {
+  margin-top: 50px;
+}
+section article a.read-more {
+  display: block;
+  /*----------*/
+  /*----------*/
+  background-color: #151823;
+  color: white;
+  padding: 20px;
+  margin: 0 -10px -10px -10px;
+  transition: 0.9s all ease-in-out;
+}
+section article a.read-more:hover,
+section article a.read-more:active {
+  max-width: 350px;
+  background-color: #115a5fc7;
+  color: black;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+/*======================== end of MAIN ===============================*/
+footer {
+  background-color: #0f1119;
+}
+footer section {
+  margin: 1em auto;
+  max-width: 450px;
+  padding: 2px 10px;
+}
+footer section p {
+  font-weight: lighter;
+}
+
+/*======================== end of FOOTER ===============================*/
+/*======================================================================*/
+/*======================================================================*/
+@media screen and (min-width: 880px) {
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  header #top-image-div {
+    display: flex;
+  }
+  header #top-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+  header #top-menu a {
+    padding-top: 15px;
+  }
+  header #top-menu a:hover, header #top-menu a:active {
+    letter-spacing: normal;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 1px;
+  }
+
+  /*======================== end of header MEDIA ===============================*/
+  #target-section .layout {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #target-section .layout article {
+    /*----------*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*----------*/
+    width: 100%;
+    margin: 2em 1% 0.5em 1%;
+    flex: 0 1 28%;
+  }
+  #target-section .layout article a.read-more {
+    /*----------*/
+    margin-top: auto;
+    /*----------*/
+  }
+  #target-section .layout article a.read-more:hover, #target-section .layout article a.read-more:active {
+    color: white;
+  }
+}
+/*======================== end of main MEDIA ===============================*/
+/*======================== end of MEDIA ===============================*/
+/*======================================================================*/
+/*======================================================================*/

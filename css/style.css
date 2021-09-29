@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  font-family: Manjari;
+  justify-content: center;
+  background-color: #252b37;
+}
+
+.backlight {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+   }
+
+.backlight-inner{
+  width: 30vw;
+  height: 30vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  color: #252b37;
+  background-color: #151823;
+  z-index: 5000;}
+
+#goToHome {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+#noora {
+  font-size: 5rem;
+}
+
+/* ====== STROKES letter animation ====== */
+/* https://codepen.io/ruidovisual/pen/eYNMZrG?__cf_chl_jschl_tk__=58e2359ee4722622139c3e03334f83a02906771f-1605373536-0-AZazkpD1AdAEMuMOdQ7N14j9KfQFXy25bXpavV__dACKgCIf9Q0olcA67wc8dW5X2u2LA0fquRBrdQIx-FJ_1pQlYQBCIVn2FrbIlDrE9IPeVLO9eFke8_1XIiCEyzVGp9vQ2xfOvmnsMu34dQv_sxO8dejb9K2Xin65Y7C4i1LBmOyhXe9iUap_3-ndmQMk3idXZZWVqQBP6zOOIQADoMDoOR2tV-Tzyfz0x7u-vdv6atNmCHTa2UNieYFSqj4n900D89mhGKVI1GZ__mnWbXNjiV7HPuSI4ssD8sZwsLWfxwKwLC6eJt-QyRae0NGnNGCPNYdoBarmML4xxN5nlSCOgb9rfXtFuoPFEtPuFs23 */
+/* https://css-tricks.com/svg-line-animation-works/ */
+
+.letter-o1 {
+  width: 50px;
+  height: 50px;
+  margin-left: -15px;
+}
+.letter-o2 {
+  width: 50px;
+  height: 50px;
+  transform: rotate(180deg);
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.cls-1 {
+  /*$delay: calc(var(--item) * 1s)*/
+  fill: none;
+  /*stroke: rgb(179, 39, 39);*/
+  stroke-miterlimit: 10;
+  /*stroke-width: 1px;*/
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1500;
+  animation: lines 20s infinite /*$delay*/;
+}
+.dot {
+  stroke-dasharray: 500;
+}
+
+@keyframes lines {
+  to {
+    stroke-dashoffset: 2000;
+  }
+}
+
+
+
+/* ======= BACK div animation https://codepen.io/fitri/pen/oPMKNv ======= */
+
+.backlight:hover .effect-1,
+.backlight:hover .effect-2,
+.backlight:hover .effect-3,
+.backlight:hover .effect-4 {
+  display: block;
+}
+
+.effect-1,
+.effect-2,
+.effect-3,
+.effect-4 {
+ 
+  display: none;
+  mix-blend-mode: multiply;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  z-index: 3000;
+}
+
+.effect-1 {
+  animation: rotate 10.8s linear infinite;
+  background:#d2e4e4;
+}
+
+.effect-2 {
+  animation: rotate 9.2s linear reverse infinite;
+  background: #98e4e4;
+}
+.effect-3 {
+  animation: rotate 15.8s  infinite;
+  background: #d2e4e4;
+}
+
+.effect-4 {
+  animation: rotate 17.2s  reverse infinite;
+  background:#92e9e9;
+}
+
+@keyframes rotate {
+  0% {
+    top: 0;
+    left: -4%;
+  }
+  25% {
+    top: -4%;
+    left: 0%;
+  }
+  50% {
+    top: 8%;
+    left: 4%;
+  }
+  75% {
+    top: 4%;
+    left: 8%;
+  }
+  100% {
+    top: 0;
+    left: -4%;
+  }
+}
+/* ----------------- */
+
+/* ========= MEDIA ========== */
+
+@media(max-width:960px){
+  .backlight-inner, .backlight{
+    width: 50vw;
+    height: 50vw;
+    }
+}
+@media(max-width:550px){
+  .backlight-inner, .backlight{
+    width: 80vw;
+    height: 80vw;
+    }
+}
