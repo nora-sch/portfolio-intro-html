@@ -2,7 +2,8 @@
 
 var portfolioButton = document.getElementById("menu-portfolio");
 var languesButton = document.getElementById("menu-langues");
-var partialPortfolio = "partials/section-portfolio.html";
+// var partialPortfolio = "partials/section-portfolio.html";
+var partialPortfolio = "index.html";
 var partialLangues = "partials/section-langues.html";
 var targetSection = document.getElementById("target-section");
 var topMenu = document.getElementById("top-menu");
