@@ -8,6 +8,19 @@ $disabledText      :#434747c7;
 $maxWidthArticle   :450px;
 $minWidthArticle   :270px;
 
+
+#under-construction {
+    position: fixed;
+    top     : 35%;
+    width   : 100%;
+    z-index : 100;
+    transform: rotate(-15deg);
+
+    img {
+        max-width: 40%;
+    }
+}
+
 body {
     margin          : 0;
     background-color: $backgroundColor1;
@@ -78,10 +91,10 @@ section {
 
         /*----------*/
 
-        background-color   : white;
-        color              : $textColor2;
-         margin          : 2em auto;
-        max-width          : $maxWidthArticle;
+        background-color      : white;
+        color                 : $textColor2;
+        margin                : 2em auto;
+        max-width             : $maxWidthArticle;
         // padding            : 10px;
 
 
@@ -105,7 +118,7 @@ section {
             }
 
             figcaption {
-                color: $disabledText;
+                color    : $disabledText;
                 font-size: small;
             }
         }

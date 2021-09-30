@@ -1,3 +1,14 @@
+#under-construction {
+  position: fixed;
+  top: 35%;
+  width: 100%;
+  z-index: 100;
+  transform: rotate(-15deg);
+}
+#under-construction img {
+  max-width: 40%;
+}
+
 body {
   margin: 0;
   background-color: #151823;
