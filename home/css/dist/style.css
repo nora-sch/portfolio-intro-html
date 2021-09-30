@@ -1,12 +1,12 @@
 #under-construction {
   position: fixed;
-  top: 35%;
+  top: 50%;
   width: 100%;
   z-index: 100;
   transform: rotate(-15deg);
 }
 #under-construction img {
-  max-width: 40%;
+  max-width: 80%;
 }
 
 body {
@@ -97,9 +97,6 @@ section article ul {
   line-height: 1.6;
   text-align: left;
 }
-section article .article-foot {
-  padding: 10px;
-}
 section article a.read-more {
   display: block;
   /*----------*/
@@ -167,6 +164,16 @@ footer section p {
   }
 
   /*======================== end of header MEDIA ===============================*/
+}
+@media screen and (min-width: 880px) and (min-width: 550px) {
+  #under-construction {
+    top: 35%;
+  }
+  #under-construction img {
+    max-width: 45%;
+  }
+}
+@media screen and (min-width: 880px) {
   #target-section .layout {
     flex-flow: row wrap;
     justify-content: space-between;
@@ -194,4 +201,6 @@ footer section p {
 /*======================== end of main MEDIA ===============================*/
 /*======================== end of MEDIA ===============================*/
 /*======================================================================*/
+/*======================================================================*/
+/*========================= animated construction =======================*/
 /*======================================================================*/
